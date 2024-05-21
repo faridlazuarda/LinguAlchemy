@@ -216,10 +216,10 @@ if __name__ == "__main__":
         learning_rate=5e-5,
         overwrite_output_dir=True,
         num_train_epochs=args.epochs,
-        per_device_train_batch_size=64,
+        per_device_train_batch_size=128,
         per_device_eval_batch_size=64,
         logging_steps=100,
-        dataloader_num_workers=32,
+        dataloader_num_workers=64,
         seed=42,
     )
 
