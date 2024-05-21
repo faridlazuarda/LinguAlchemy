@@ -1,0 +1,78 @@
+
+  0%|                                                                                                                                                                              | 0/22490 [00:00<?, ?it/s]/home/alham.fikri/farid/lingualchemy/src/fusion_models.py:83: UserWarning: Using a target size (torch.Size([128, 299, 299])) that is different to the input size (torch.Size([128, 299, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss_uriel = F.mse_loss(projected_pooled_output.unsqueeze(-1), correct_uriel_vectors) * self.scale
+
+
+
+
+
+
+
+
+
+
+  0%|▋                                                                                                                                                                 | 101/22490 [00:23<1:17:06,  4.84it/s]
+
+
+
+
+
+
+
+
+
+
+  1%|█▍                                                                                                                                                                | 199/22490 [00:43<1:17:28,  4.80it/s]
+
+
+
+
+
+
+
+
+
+
+  1%|██▏                                                                                                                                                               | 296/22490 [01:03<1:24:47,  4.36it/s]
+
+
+
+
+
+
+
+
+
+
+
+  2%|██▉                                                                                                                                                               | 404/22490 [01:25<1:15:58,  4.84it/s]
+
+
+
+
+
+
+
+
+
+
+  2%|███▌                                                                                                                                                              | 501/22490 [01:45<1:30:01,  4.07it/s]
+
+
+
+
+
+
+
+
+
+
+  3%|████▎                                                                                                                                                             | 600/22490 [02:06<1:14:23,  4.90it/s]
+
+
+
+
+
+
+
+
