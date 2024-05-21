@@ -1,0 +1,17 @@
+
+  0%|                                                                                                                                                                                         | 0/10 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/alham.fikri/farid/lingualchemy/src/fusionbert_massive.py", line 225, in <module>
+    trainer.train()
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1555, in train
+    return inner_training_loop(
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1860, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 2725, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/alham.fikri/farid/lingualchemy/src/fusion_models.py", line 81, in compute_loss
+    loss_uriel = F.mse_loss(projected_pooled_output.unsqueeze(-1), correct_uriel_vectors) * args.scale
+NameError: name 'F' is not defined

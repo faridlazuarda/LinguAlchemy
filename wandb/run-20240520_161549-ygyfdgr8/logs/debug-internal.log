@@ -1,0 +1,209 @@
+2024-05-20 16:15:49,510 INFO    StreamThr :3549364 [internal.py:wandb_internal():86] W&B internal server running at pid: 3549364, started at: 2024-05-20 16:15:49.509312
+2024-05-20 16:15:49,512 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: status
+2024-05-20 16:15:49,513 INFO    WriterThread:3549364 [datastore.py:open_for_write():85] open: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/run-ygyfdgr8.wandb
+2024-05-20 16:15:49,516 DEBUG   SenderThread:3549364 [sender.py:send():382] send: header
+2024-05-20 16:15:49,516 DEBUG   SenderThread:3549364 [sender.py:send():382] send: run
+2024-05-20 16:15:49,881 INFO    SenderThread:3549364 [dir_watcher.py:__init__():211] watching files in: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files
+2024-05-20 16:15:49,881 INFO    SenderThread:3549364 [sender.py:_start_run_threads():1136] run started: ygyfdgr8 with start time 1716214549.510221
+2024-05-20 16:15:49,896 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: check_version
+2024-05-20 16:15:49,896 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: check_version
+2024-05-20 16:15:50,005 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: run_start
+2024-05-20 16:15:50,050 DEBUG   HandlerThread:3549364 [system_info.py:__init__():32] System info init
+2024-05-20 16:15:50,050 DEBUG   HandlerThread:3549364 [system_info.py:__init__():47] System info init done
+2024-05-20 16:15:50,050 INFO    HandlerThread:3549364 [system_monitor.py:start():194] Starting system monitor
+2024-05-20 16:15:50,050 INFO    SystemMonitor:3549364 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-20 16:15:50,050 INFO    HandlerThread:3549364 [system_monitor.py:probe():214] Collecting system info
+2024-05-20 16:15:50,051 INFO    SystemMonitor:3549364 [interfaces.py:start():190] Started cpu monitoring
+2024-05-20 16:15:50,052 INFO    SystemMonitor:3549364 [interfaces.py:start():190] Started disk monitoring
+2024-05-20 16:15:50,053 INFO    SystemMonitor:3549364 [interfaces.py:start():190] Started gpu monitoring
+2024-05-20 16:15:50,054 INFO    SystemMonitor:3549364 [interfaces.py:start():190] Started memory monitoring
+2024-05-20 16:15:50,059 INFO    SystemMonitor:3549364 [interfaces.py:start():190] Started network monitoring
+2024-05-20 16:15:50,131 DEBUG   HandlerThread:3549364 [system_info.py:probe():196] Probing system
+2024-05-20 16:15:50,134 DEBUG   HandlerThread:3549364 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-20 16:15:50,134 DEBUG   HandlerThread:3549364 [system_info.py:probe():244] Probing system done
+2024-05-20 16:15:50,134 DEBUG   HandlerThread:3549364 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-83-generic-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2024-05-20T14:15:50.132036', 'startedAt': '2024-05-20T14:15:49.493061', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/home/alham.fikri/farid/lingualchemy/massive/fusionbert.py', 'codePathLocal': 'fusionbert.py', 'codePath': 'fusionbert.py', 'host': '675d-2', 'username': 'alham.fikri', 'executable': '/home/alham.fikri/mambaforge/envs/venvadapt/bin/python', 'cpu_count': 128, 'cpu_count_logical': 128, 'cpu_freq': {'current': 1834.3822031250002, 'min': 1500.0, 'max': 2450.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2073.619, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.288, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}], 'disk': {'/': {'total': 560.7446212768555, 'used': 43.221336364746094}}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 1007.5889015197754}}
+2024-05-20 16:15:50,135 INFO    HandlerThread:3549364 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-20 16:15:50,135 INFO    HandlerThread:3549364 [system_monitor.py:probe():227] Publishing system info
+2024-05-20 16:15:50,135 DEBUG   HandlerThread:3549364 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-05-20 16:15:50,137 DEBUG   HandlerThread:3549364 [system_info.py:_save_pip():68] Saving pip packages done
+2024-05-20 16:15:50,137 DEBUG   HandlerThread:3549364 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-05-20 16:15:50,884 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/conda-environment.yaml
+2024-05-20 16:15:50,885 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/requirements.txt
+2024-05-20 16:15:54,369 DEBUG   HandlerThread:3549364 [system_info.py:_save_conda():87] Saving conda packages done
+2024-05-20 16:15:54,372 INFO    HandlerThread:3549364 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-20 16:15:54,378 DEBUG   SenderThread:3549364 [sender.py:send():382] send: files
+2024-05-20 16:15:54,378 INFO    SenderThread:3549364 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-05-20 16:15:54,390 DEBUG   SenderThread:3549364 [sender.py:send():382] send: telemetry
+2024-05-20 16:15:54,434 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-20 16:15:54,434 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-20 16:15:54,435 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: stop_status
+2024-05-20 16:15:54,671 DEBUG   SenderThread:3549364 [sender.py:send():382] send: config
+2024-05-20 16:15:54,672 DEBUG   SenderThread:3549364 [sender.py:send():382] send: metric
+2024-05-20 16:15:54,672 DEBUG   SenderThread:3549364 [sender.py:send():382] send: telemetry
+2024-05-20 16:15:54,672 DEBUG   SenderThread:3549364 [sender.py:send():382] send: metric
+2024-05-20 16:15:54,672 WARNING SenderThread:3549364 [sender.py:send_metric():1343] Seen metric with glob (shouldn't happen)
+2024-05-20 16:15:54,672 DEBUG   SenderThread:3549364 [sender.py:send():382] send: telemetry
+2024-05-20 16:15:54,672 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 16:15:54,886 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/conda-environment.yaml
+2024-05-20 16:15:54,887 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:15:54,887 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/wandb-metadata.json
+2024-05-20 16:15:55,029 INFO    wandb-upload_0:3549364 [upload_job.py:push():131] Uploaded file /tmp/tmp2upi_kqbwandb/xqgft4tc-wandb-metadata.json
+2024-05-20 16:15:56,889 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:15:58,891 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:15:59,754 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 16:16:00,895 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:02,897 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:04,865 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 16:16:04,899 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:06,901 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:08,903 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:09,389 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-20 16:16:09,390 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-20 16:16:09,390 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: stop_status
+2024-05-20 16:16:09,965 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 16:16:10,207 DEBUG   SenderThread:3549364 [sender.py:send():382] send: exit
+2024-05-20 16:16:10,207 INFO    SenderThread:3549364 [sender.py:send_exit():589] handling exit code: 255
+2024-05-20 16:16:10,207 INFO    SenderThread:3549364 [sender.py:send_exit():591] handling runtime: 20
+2024-05-20 16:16:10,209 INFO    SenderThread:3549364 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-20 16:16:10,210 INFO    SenderThread:3549364 [sender.py:send_exit():597] send defer
+2024-05-20 16:16:10,210 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:10,210 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 0
+2024-05-20 16:16:10,210 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:10,211 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-05-20 16:16:10,211 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 1
+2024-05-20 16:16:10,211 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:10,211 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 1
+2024-05-20 16:16:10,211 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:10,211 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-05-20 16:16:10,211 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 2
+2024-05-20 16:16:10,211 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:10,211 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 2
+2024-05-20 16:16:10,211 INFO    HandlerThread:3549364 [system_monitor.py:finish():203] Stopping system monitor
+2024-05-20 16:16:10,212 DEBUG   SystemMonitor:3549364 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-20 16:16:10,212 INFO    HandlerThread:3549364 [interfaces.py:finish():202] Joined cpu monitor
+2024-05-20 16:16:10,213 DEBUG   SystemMonitor:3549364 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-05-20 16:16:10,213 INFO    HandlerThread:3549364 [interfaces.py:finish():202] Joined disk monitor
+2024-05-20 16:16:10,213 DEBUG   SystemMonitor:3549364 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-05-20 16:16:10,906 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:10,906 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/wandb-summary.json
+2024-05-20 16:16:11,033 INFO    HandlerThread:3549364 [interfaces.py:finish():202] Joined gpu monitor
+2024-05-20 16:16:11,034 INFO    HandlerThread:3549364 [interfaces.py:finish():202] Joined memory monitor
+2024-05-20 16:16:11,034 INFO    HandlerThread:3549364 [interfaces.py:finish():202] Joined network monitor
+2024-05-20 16:16:11,035 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:11,035 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-05-20 16:16:11,035 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 3
+2024-05-20 16:16:11,035 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:11,036 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 3
+2024-05-20 16:16:11,037 DEBUG   SenderThread:3549364 [sender.py:send():382] send: stats
+2024-05-20 16:16:11,038 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:11,038 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-05-20 16:16:11,038 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 4
+2024-05-20 16:16:11,038 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:11,038 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 4
+2024-05-20 16:16:11,039 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:11,039 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-05-20 16:16:11,039 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 5
+2024-05-20 16:16:11,039 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:11,039 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 5
+2024-05-20 16:16:11,039 DEBUG   SenderThread:3549364 [sender.py:send():382] send: summary
+2024-05-20 16:16:11,041 INFO    SenderThread:3549364 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-20 16:16:11,042 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:11,042 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-05-20 16:16:11,042 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 6
+2024-05-20 16:16:11,042 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:11,042 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 6
+2024-05-20 16:16:11,042 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:11,042 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-05-20 16:16:11,046 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: status_report
+2024-05-20 16:16:11,207 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 16:16:11,264 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 7
+2024-05-20 16:16:11,265 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: poll_exit
+2024-05-20 16:16:11,265 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:11,266 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 7
+2024-05-20 16:16:11,266 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:11,266 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-05-20 16:16:11,907 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/wandb-summary.json
+2024-05-20 16:16:11,908 INFO    Thread-12 :3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/config.yaml
+2024-05-20 16:16:12,208 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 16:16:12,715 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 8
+2024-05-20 16:16:12,716 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: poll_exit
+2024-05-20 16:16:12,716 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:12,716 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 8
+2024-05-20 16:16:12,717 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:12,717 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-05-20 16:16:12,717 INFO    SenderThread:3549364 [job_builder.py:build():298] Attempting to build job artifact
+2024-05-20 16:16:12,720 INFO    SenderThread:3549364 [job_builder.py:_get_source_type():439] no source found
+2024-05-20 16:16:12,720 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 9
+2024-05-20 16:16:12,720 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:12,720 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 9
+2024-05-20 16:16:12,721 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:12,721 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-05-20 16:16:12,721 INFO    SenderThread:3549364 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-05-20 16:16:12,909 INFO    SenderThread:3549364 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:12,910 INFO    SenderThread:3549364 [dir_watcher.py:finish():388] scan: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files
+2024-05-20 16:16:12,911 INFO    SenderThread:3549364 [dir_watcher.py:finish():402] scan save: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log output.log
+2024-05-20 16:16:12,911 INFO    SenderThread:3549364 [dir_watcher.py:finish():402] scan save: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/requirements.txt requirements.txt
+2024-05-20 16:16:12,912 INFO    SenderThread:3549364 [dir_watcher.py:finish():402] scan save: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/conda-environment.yaml conda-environment.yaml
+2024-05-20 16:16:12,915 INFO    SenderThread:3549364 [dir_watcher.py:finish():402] scan save: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/config.yaml config.yaml
+2024-05-20 16:16:12,917 INFO    SenderThread:3549364 [dir_watcher.py:finish():402] scan save: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/wandb-metadata.json wandb-metadata.json
+2024-05-20 16:16:12,917 INFO    SenderThread:3549364 [dir_watcher.py:finish():402] scan save: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/wandb-summary.json wandb-summary.json
+2024-05-20 16:16:12,920 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 10
+2024-05-20 16:16:12,921 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:12,921 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 10
+2024-05-20 16:16:12,928 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:12,928 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-05-20 16:16:12,928 INFO    SenderThread:3549364 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-20 16:16:13,208 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 16:16:13,209 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: poll_exit
+2024-05-20 16:16:13,313 INFO    wandb-upload_1:3549364 [upload_job.py:push():131] Uploaded file /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/output.log
+2024-05-20 16:16:13,454 INFO    wandb-upload_2:3549364 [upload_job.py:push():131] Uploaded file /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/conda-environment.yaml
+2024-05-20 16:16:13,518 INFO    wandb-upload_4:3549364 [upload_job.py:push():131] Uploaded file /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/wandb-summary.json
+2024-05-20 16:16:13,648 INFO    wandb-upload_0:3549364 [upload_job.py:push():131] Uploaded file /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/requirements.txt
+2024-05-20 16:16:13,674 INFO    wandb-upload_3:3549364 [upload_job.py:push():131] Uploaded file /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/files/config.yaml
+2024-05-20 16:16:13,874 INFO    Thread-11 (_thread_body):3549364 [sender.py:transition_state():617] send defer: 11
+2024-05-20 16:16:13,875 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:13,875 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 11
+2024-05-20 16:16:13,875 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:13,875 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-05-20 16:16:13,875 INFO    SenderThread:3549364 [file_pusher.py:join():181] waiting for file pusher
+2024-05-20 16:16:13,876 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 12
+2024-05-20 16:16:13,876 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:13,876 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 12
+2024-05-20 16:16:13,876 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:13,877 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-05-20 16:16:13,877 INFO    SenderThread:3549364 [file_stream.py:finish():595] file stream finish called
+2024-05-20 16:16:14,039 INFO    SenderThread:3549364 [file_stream.py:finish():599] file stream finish is done
+2024-05-20 16:16:14,039 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 13
+2024-05-20 16:16:14,039 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:14,039 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 13
+2024-05-20 16:16:14,039 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:14,040 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-05-20 16:16:14,040 INFO    SenderThread:3549364 [sender.py:transition_state():617] send defer: 14
+2024-05-20 16:16:14,040 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: defer
+2024-05-20 16:16:14,040 INFO    HandlerThread:3549364 [handler.py:handle_request_defer():172] handle defer: 14
+2024-05-20 16:16:14,041 DEBUG   SenderThread:3549364 [sender.py:send():382] send: final
+2024-05-20 16:16:14,041 DEBUG   SenderThread:3549364 [sender.py:send():382] send: footer
+2024-05-20 16:16:14,041 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: defer
+2024-05-20 16:16:14,041 INFO    SenderThread:3549364 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-05-20 16:16:14,042 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 16:16:14,042 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: poll_exit
+2024-05-20 16:16:14,043 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: poll_exit
+2024-05-20 16:16:14,043 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: poll_exit
+2024-05-20 16:16:14,044 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: server_info
+2024-05-20 16:16:14,044 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: server_info
+2024-05-20 16:16:14,047 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: get_summary
+2024-05-20 16:16:14,047 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: sampled_history
+2024-05-20 16:16:14,048 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-20 16:16:14,048 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: job_info
+2024-05-20 16:16:14,213 DEBUG   SenderThread:3549364 [sender.py:send_request():409] send_request: job_info
+2024-05-20 16:16:14,214 INFO    MainThread:3549364 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-05-20 16:16:14,214 INFO    MainThread:3549364 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-05-20 16:16:14,214 INFO    MainThread:3549364 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-05-20 16:16:14,214 DEBUG   HandlerThread:3549364 [handler.py:handle_request():146] handle_request: shutdown
+2024-05-20 16:16:14,215 INFO    HandlerThread:3549364 [handler.py:finish():866] shutting down handler
+2024-05-20 16:16:14,539 WARNING StreamThr :3549364 [internal.py:is_dead():414] Internal process exiting, parent pid 3548916 disappeared
+2024-05-20 16:16:14,539 ERROR   StreamThr :3549364 [internal.py:wandb_internal():152] Internal process shutdown.
+2024-05-20 16:16:15,048 INFO    WriterThread:3549364 [datastore.py:close():294] close: /home/alham.fikri/farid/lingualchemy/massive/wandb/run-20240520_161549-ygyfdgr8/run-ygyfdgr8.wandb
+2024-05-20 16:16:15,214 INFO    SenderThread:3549364 [sender.py:finish():1548] shutting down sender
+2024-05-20 16:16:15,214 INFO    SenderThread:3549364 [file_pusher.py:finish():175] shutting down file pusher
+2024-05-20 16:16:15,214 INFO    SenderThread:3549364 [file_pusher.py:join():181] waiting for file pusher

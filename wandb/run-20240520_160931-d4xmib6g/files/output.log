@@ -1,0 +1,14 @@
+
+  0%|                                                                                                                                                                                         | 0/67470 [00:00<?, ?it/s]/home/alham.fikri/farid/lingualchemy/massive/fusionbert.py:370: UserWarning: Using a target size (torch.Size([128, 505, 505])) that is different to the input size (torch.Size([128, 505, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss_uriel = F.mse_loss(projected_pooled_output.unsqueeze(-1), correct_uriel_vectors)*factor
+
+
+
+  0%|                                                                                                                                                                              | 35/67470 [00:10<3:49:18,  4.90it/s]Traceback (most recent call last):
+  File "/home/alham.fikri/farid/lingualchemy/massive/fusionbert.py", line 434, in <module>
+    for batch in tqdm(test_loader, desc=f"Testing lang {lang}"):
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1555, in train
+    return inner_training_loop(
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1865, in _inner_training_loop
+    and (torch.isnan(tr_loss_step) or torch.isinf(tr_loss_step))
+KeyboardInterrupt
