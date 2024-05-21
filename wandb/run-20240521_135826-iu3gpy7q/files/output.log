@@ -1,0 +1,52 @@
+
+  0%|                                                                                                                                                                         | 0/1800 [00:00<?, ?it/s]/home/alham.fikri/farid/lingualchemy/src/fusion_models.py:83: UserWarning: Using a target size (torch.Size([128, 299, 299])) that is different to the input size (torch.Size([128, 299, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss_uriel = F.mse_loss(projected_pooled_output.unsqueeze(-1), correct_uriel_vectors) * self.scale
+
+
+
+
+
+
+
+
+
+
+  6%|████████▉                                                                                                                                                      | 101/1800 [00:23<05:53,  4.81it/s]
+
+
+
+
+
+
+
+
+ 10%|███████████████▊                                                                                                                                               | 179/1800 [00:39<05:31,  4.89it/s]/home/alham.fikri/farid/lingualchemy/src/fusion_models.py:83: UserWarning: Using a target size (torch.Size([116, 299, 299])) that is different to the input size (torch.Size([116, 299, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss_uriel = F.mse_loss(projected_pooled_output.unsqueeze(-1), correct_uriel_vectors) * self.scale
+ 10%|███████████████▉                                                                                                                                               | 180/1800 [00:40<06:20,  4.26it/s]/home/alham.fikri/farid/lingualchemy/src/fusion_models.py:83: UserWarning: Using a target size (torch.Size([128, 299, 299])) that is different to the input size (torch.Size([128, 299, 1])). This will likely lead to incorrect results due to broadcasting. Please ensure they have the same size.
+  loss_uriel = F.mse_loss(projected_pooled_output.unsqueeze(-1), correct_uriel_vectors) * self.scale
+
+ 11%|█████████████████▎                                                                                                                                             | 196/1800 [00:47<05:40,  4.72it/s]
+
+
+
+
+
+
+
+
+
+
+ 17%|██████████████████████████▎                                                                                                                                    | 298/1800 [01:09<05:08,  4.87it/s]Traceback (most recent call last):
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/alham.fikri/farid/lingualchemy/src/lingualchemy.py", line 239, in <module>
+    trainer.model.save_pretrained(args.out_path)
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1555, in train
+    return inner_training_loop(
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1917, in _inner_training_loop
+    model.zero_grad()
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/torch/nn/modules/module.py", line 2461, in zero_grad
+    p.grad = None
+KeyboardInterrupt

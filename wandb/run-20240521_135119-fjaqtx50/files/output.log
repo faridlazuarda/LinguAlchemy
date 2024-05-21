@@ -1,0 +1,30 @@
+  0%|                                                                                                                                                                                 | 0/10 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/runpy.py", line 196, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/runpy.py", line 86, in _run_code
+    exec(code, run_globals)
+  File "/home/alham.fikri/farid/lingualchemy/src/lingualchemy.py", line 237, in <module>
+    trainer.train()
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1555, in train
+    return inner_training_loop(
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/transformers/trainer.py", line 1838, in _inner_training_loop
+    for step, inputs in enumerate(epoch_iterator):
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/accelerate/data_loader.py", line 448, in __iter__
+    dataloader_iter = super().__iter__()
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 438, in __iter__
+    return self._get_iterator()
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 386, in _get_iterator
+    return _MultiProcessingDataLoaderIter(self)
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/site-packages/torch/utils/data/dataloader.py", line 1039, in __init__
+    w.start()
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/multiprocessing/process.py", line 121, in start
+    self._popen = self._Popen(self)
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/multiprocessing/context.py", line 224, in _Popen
+    return _default_context.get_context().Process._Popen(process_obj)
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/multiprocessing/context.py", line 281, in _Popen
+    return Popen(process_obj)
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/multiprocessing/popen_fork.py", line 19, in __init__
+    self._launch(process_obj)
+  File "/home/alham.fikri/mambaforge/envs/venvadapt/lib/python3.10/multiprocessing/popen_fork.py", line 66, in _launch
+    self.pid = os.fork()
+OSError: [Errno 12] Cannot allocate memory

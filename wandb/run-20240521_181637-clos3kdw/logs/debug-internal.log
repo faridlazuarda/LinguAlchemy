@@ -1,0 +1,961 @@
+2024-05-21 18:16:37,928 INFO    StreamThr :3960636 [internal.py:wandb_internal():86] W&B internal server running at pid: 3960636, started at: 2024-05-21 18:16:37.927588
+2024-05-21 18:16:37,930 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status
+2024-05-21 18:16:37,932 INFO    WriterThread:3960636 [datastore.py:open_for_write():85] open: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/run-clos3kdw.wandb
+2024-05-21 18:16:37,933 DEBUG   SenderThread:3960636 [sender.py:send():382] send: header
+2024-05-21 18:16:37,941 DEBUG   SenderThread:3960636 [sender.py:send():382] send: run
+2024-05-21 18:16:38,354 INFO    SenderThread:3960636 [dir_watcher.py:__init__():211] watching files in: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files
+2024-05-21 18:16:38,354 INFO    SenderThread:3960636 [sender.py:_start_run_threads():1136] run started: clos3kdw with start time 1716308197.928248
+2024-05-21 18:16:38,369 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: check_version
+2024-05-21 18:16:38,369 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: check_version
+2024-05-21 18:16:38,485 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: run_start
+2024-05-21 18:16:38,527 DEBUG   HandlerThread:3960636 [system_info.py:__init__():32] System info init
+2024-05-21 18:16:38,527 DEBUG   HandlerThread:3960636 [system_info.py:__init__():47] System info init done
+2024-05-21 18:16:38,527 INFO    HandlerThread:3960636 [system_monitor.py:start():194] Starting system monitor
+2024-05-21 18:16:38,528 INFO    SystemMonitor:3960636 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-21 18:16:38,528 INFO    HandlerThread:3960636 [system_monitor.py:probe():214] Collecting system info
+2024-05-21 18:16:38,528 INFO    SystemMonitor:3960636 [interfaces.py:start():190] Started cpu monitoring
+2024-05-21 18:16:38,529 INFO    SystemMonitor:3960636 [interfaces.py:start():190] Started disk monitoring
+2024-05-21 18:16:38,530 INFO    SystemMonitor:3960636 [interfaces.py:start():190] Started gpu monitoring
+2024-05-21 18:16:38,531 INFO    SystemMonitor:3960636 [interfaces.py:start():190] Started memory monitoring
+2024-05-21 18:16:38,533 INFO    SystemMonitor:3960636 [interfaces.py:start():190] Started network monitoring
+2024-05-21 18:16:38,588 DEBUG   HandlerThread:3960636 [system_info.py:probe():196] Probing system
+2024-05-21 18:16:38,591 DEBUG   HandlerThread:3960636 [system_info.py:_probe_git():181] Probing git
+2024-05-21 18:16:38,609 DEBUG   HandlerThread:3960636 [system_info.py:_probe_git():189] Probing git done
+2024-05-21 18:16:38,609 DEBUG   HandlerThread:3960636 [system_info.py:probe():244] Probing system done
+2024-05-21 18:16:38,609 DEBUG   HandlerThread:3960636 [system_monitor.py:probe():223] {'os': 'Linux-5.15.0-83-generic-x86_64-with-glibc2.35', 'python': '3.10.13', 'heartbeatAt': '2024-05-21T16:16:38.588245', 'startedAt': '2024-05-21T16:16:37.914369', 'docker': None, 'cuda': None, 'args': ('--model_name', 'bert-base-multilingual-cased', '--epochs', '10', '--out_path', '/mnt/beegfs/farid/lingualchemy/ablation/massive/bert-base-multilingual-cased/scale10_syntax_knn_geo', '--vector', 'syntax_knn_geo', '--scale', '10', '--eval_path', '/home/alham.fikri/farid/lingualchemy/outputs/massive/bert-base-multilingual-cased_scale10', '--override_results'), 'state': 'running', 'program': '-m src.lingualchemy', 'codePathLocal': None, 'git': {'remote': 'https://github.com/faridlazuarda/LinguAlchemy.git', 'commit': '0d7ea1ca0c645ff22e05d2327497a19663454da1'}, 'email': 'faridlazuarda@gmail.com', 'root': '/home/alham.fikri/farid/lingualchemy', 'host': '675d-2', 'username': 'alham.fikri', 'executable': '/home/alham.fikri/mambaforge/envs/venvadapt/bin/python', 'cpu_count': 128, 'cpu_count_logical': 128, 'cpu_freq': {'current': 1565.7971171875, 'min': 1500.0, 'max': 2450.0}, 'cpu_freq_per_core': [{'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 3411.212, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1496.779, 'min': 1500.0, 'max': 2450.0}, {'current': 1496.515, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 3425.109, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2450.0}, {'current': 2450.0, 'min': 1500.0, 'max': 2450.0}], 'disk': {'/': {'total': 560.7446212768555, 'used': 43.17572021484375}}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 8, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}, {'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 1007.5889015197754}}
+2024-05-21 18:16:38,609 INFO    HandlerThread:3960636 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-21 18:16:38,610 INFO    HandlerThread:3960636 [system_monitor.py:probe():227] Publishing system info
+2024-05-21 18:16:38,610 DEBUG   HandlerThread:3960636 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-05-21 18:16:38,611 DEBUG   HandlerThread:3960636 [system_info.py:_save_pip():68] Saving pip packages done
+2024-05-21 18:16:38,611 DEBUG   HandlerThread:3960636 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-05-21 18:16:39,356 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/requirements.txt
+2024-05-21 18:16:39,357 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/conda-environment.yaml
+2024-05-21 18:16:42,828 DEBUG   HandlerThread:3960636 [system_info.py:_save_conda():87] Saving conda packages done
+2024-05-21 18:16:42,831 INFO    HandlerThread:3960636 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-21 18:16:42,836 DEBUG   SenderThread:3960636 [sender.py:send():382] send: files
+2024-05-21 18:16:42,836 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-05-21 18:16:42,847 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:16:42,847 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:16:42,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:16:43,115 DEBUG   SenderThread:3960636 [sender.py:send():382] send: telemetry
+2024-05-21 18:16:43,115 DEBUG   SenderThread:3960636 [sender.py:send():382] send: config
+2024-05-21 18:16:43,116 DEBUG   SenderThread:3960636 [sender.py:send():382] send: metric
+2024-05-21 18:16:43,116 DEBUG   SenderThread:3960636 [sender.py:send():382] send: telemetry
+2024-05-21 18:16:43,116 DEBUG   SenderThread:3960636 [sender.py:send():382] send: metric
+2024-05-21 18:16:43,116 WARNING SenderThread:3960636 [sender.py:send_metric():1343] Seen metric with glob (shouldn't happen)
+2024-05-21 18:16:43,116 DEBUG   SenderThread:3960636 [sender.py:send():382] send: telemetry
+2024-05-21 18:16:43,116 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:16:43,359 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/conda-environment.yaml
+2024-05-21 18:16:43,359 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-metadata.json
+2024-05-21 18:16:43,360 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:43,507 INFO    wandb-upload_0:3960636 [upload_job.py:push():131] Uploaded file /tmp/tmpztg5vh5rwandb/ctpid7ca-wandb-metadata.json
+2024-05-21 18:16:45,361 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:47,364 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:48,247 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:16:49,367 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:51,369 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:53,334 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:16:53,371 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:55,373 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:57,375 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:16:57,847 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:16:57,848 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:16:57,849 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:16:58,424 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:16:59,378 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:01,381 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:03,383 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:03,513 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:05,385 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:06,714 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:17:06,716 DEBUG   SenderThread:3960636 [sender.py:send():382] send: metric
+2024-05-21 18:17:06,717 DEBUG   SenderThread:3960636 [sender.py:send():382] send: metric
+2024-05-21 18:17:06,717 DEBUG   SenderThread:3960636 [sender.py:send():382] send: metric
+2024-05-21 18:17:06,717 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:17:06,717 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:17:06,719 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:17:07,388 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:07,388 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_created():271] file/dir created: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:17:08,553 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:09,390 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:09,391 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/config.yaml
+2024-05-21 18:17:11,393 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:12,850 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:17:12,850 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:17:12,851 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:17:13,395 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:14,060 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:15,398 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:17,400 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:19,158 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:19,403 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:21,405 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:23,407 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:24,171 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:25,409 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:27,242 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:17:27,244 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:17:27,244 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:17:27,247 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:17:27,411 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:27,411 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:17:27,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:17:27,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:17:27,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:17:29,278 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:29,413 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:31,416 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:33,418 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:34,382 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:35,419 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:37,421 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:38,533 DEBUG   SystemMonitor:3960636 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-21 18:17:38,537 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:17:39,423 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:39,484 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:41,426 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:42,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:17:42,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:17:42,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:17:43,428 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:44,580 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:45,430 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:47,433 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:47,760 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:17:47,762 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:17:47,762 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:17:47,763 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:17:48,433 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:17:49,435 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:49,590 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:51,945 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:54,227 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:54,703 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:17:56,229 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:57,848 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:17:57,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:17:57,849 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:17:58,231 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:17:59,813 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:00,233 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:02,235 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:04,236 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:05,008 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:06,238 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:08,241 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:08,415 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:18:08,417 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:18:08,417 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:18:08,418 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:18:08,540 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:18:09,242 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:18:10,040 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:10,244 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:11,245 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:12,247 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:12,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:18:12,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:18:12,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:18:14,249 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:15,163 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:16,251 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:18,254 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:20,256 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:20,277 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:22,259 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:24,261 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:25,412 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:26,264 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:27,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:18:27,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:18:27,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:18:28,266 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:29,034 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:18:29,036 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:18:29,036 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:18:29,038 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:18:29,267 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:18:30,268 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:30,455 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:31,270 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:32,271 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:34,274 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:35,581 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:36,276 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:38,278 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:38,543 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:18:40,280 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:40,705 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:42,282 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:42,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:18:42,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:18:42,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:18:44,284 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:45,812 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:46,287 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:48,290 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:49,602 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:18:49,604 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:18:49,604 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:18:49,606 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:18:50,291 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:50,292 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:18:50,829 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:51,293 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:52,294 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:54,296 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:55,931 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:18:56,298 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:18:57,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:18:57,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:18:57,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:18:58,301 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:00,303 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:01,041 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:02,305 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:04,308 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:06,153 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:06,309 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:08,312 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:08,545 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:19:10,153 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:19:10,155 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:19:10,155 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:19:10,157 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:19:10,316 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:10,316 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:19:11,175 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:11,317 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:12,319 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:12,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:19:12,850 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:19:12,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:19:14,321 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:16,276 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:16,323 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:18,325 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:20,329 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:21,419 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:22,331 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:24,334 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:26,335 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:26,533 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:27,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:19:27,850 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:19:27,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:19:28,338 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:30,340 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:30,738 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:19:30,739 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:19:30,740 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:19:30,741 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:19:31,341 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:19:31,553 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:32,342 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:33,344 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:34,345 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:36,347 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:36,659 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:38,350 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:38,549 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:19:40,352 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:41,773 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:42,354 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:42,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:19:42,850 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:19:42,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:19:44,356 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:46,359 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:46,893 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:48,362 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:50,364 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:51,198 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:19:51,199 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:19:51,200 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:19:51,201 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:19:51,365 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:19:52,123 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:52,366 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:53,367 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:54,369 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:56,371 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:19:57,239 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:19:57,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:19:57,850 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:19:57,850 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:19:58,373 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:00,376 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:02,347 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:02,378 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:04,380 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:06,382 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:07,460 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:08,384 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:08,551 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:20:10,387 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:11,763 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:20:11,765 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:20:11,765 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:20:11,767 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:20:12,389 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:12,389 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:20:12,579 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:12,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:20:12,851 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:20:12,851 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:20:13,391 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:14,394 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:16,398 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:17,588 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:18,401 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:20,404 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:22,406 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:22,692 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:24,409 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:26,410 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:27,797 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:27,849 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:20:27,851 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:20:27,851 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:20:28,413 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:30,415 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:32,306 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:20:32,308 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:20:32,308 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:20:32,310 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:20:32,417 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:32,417 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:20:32,912 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:33,419 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:34,420 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:36,422 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:37,933 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:38,424 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:38,553 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:20:40,426 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:42,429 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:42,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:20:42,857 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:20:42,859 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:20:43,056 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:44,431 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:46,434 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:48,148 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:48,436 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:50,438 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:52,440 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:52,861 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:20:52,862 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:20:52,862 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:20:52,864 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:20:53,265 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:53,440 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:20:54,442 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:55,444 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:56,445 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:20:57,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:20:57,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:20:57,855 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:20:58,270 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:20:58,446 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:00,449 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:02,451 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:03,377 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:04,453 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:06,455 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:08,457 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:08,499 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:08,556 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:21:10,459 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:12,462 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:12,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:21:12,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:21:12,856 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:21:13,413 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:21:13,416 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:21:13,416 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:21:13,418 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:21:13,463 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:21:13,613 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:14,464 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:15,466 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:16,467 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:18,469 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:18,632 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:20,472 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:22,475 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:23,742 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:24,477 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:26,479 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:27,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:21:27,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:21:27,857 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:21:28,482 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:28,851 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:30,484 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:32,486 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:33,962 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:33,968 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:21:33,969 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:21:33,969 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:21:33,971 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:21:34,488 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:34,488 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:21:35,489 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:36,491 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:38,493 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:38,560 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:21:38,984 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:40,495 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:42,497 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:42,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:21:42,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:21:42,855 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:21:44,103 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:44,499 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:46,502 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:48,504 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:49,213 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:50,506 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:52,509 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:54,323 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:21:54,510 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:54,534 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:21:54,535 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:21:54,536 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:21:54,537 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:21:55,512 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:55,512 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:21:56,513 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:57,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:21:57,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:21:57,857 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:21:58,515 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:21:59,356 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:00,518 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:02,520 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:04,475 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:04,523 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:06,525 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:08,528 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:08,562 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:22:09,591 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:10,531 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:12,533 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:12,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:22:12,855 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:22:12,858 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:22:14,536 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:14,702 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:15,117 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:22:15,119 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:22:15,119 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:22:15,121 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:22:15,536 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:22:16,538 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:17,539 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:18,541 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:19,814 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:20,544 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:22,546 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:24,549 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:24,840 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:26,551 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:27,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:22:27,856 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:22:27,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:22:28,553 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:29,951 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:30,555 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:32,557 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:34,560 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:35,065 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:35,687 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:22:35,688 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:22:35,689 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:22:35,691 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:22:36,562 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:36,562 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:22:37,564 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:38,564 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:22:38,567 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:40,183 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:40,569 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:42,571 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:42,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:22:42,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:22:42,856 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:22:44,573 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:45,204 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:46,576 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:48,578 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:50,320 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:50,580 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:52,583 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:54,585 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:55,435 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:22:56,259 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:22:56,260 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:22:56,260 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:22:56,263 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:22:56,587 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:56,587 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:22:57,589 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:22:57,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:22:57,855 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:22:57,856 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:22:58,590 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:00,552 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:00,593 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:02,595 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:04,598 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:05,579 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:06,600 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:08,568 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:23:08,603 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:10,607 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:10,694 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:12,610 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:12,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:23:12,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:23:12,856 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:23:14,612 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:15,810 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:16,614 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:16,839 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:23:16,841 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:23:16,841 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:23:16,843 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:23:17,615 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:23:18,616 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:19,617 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:20,619 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:20,924 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:22,622 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:24,624 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:25,944 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:26,626 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:27,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:23:27,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:23:27,857 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:23:28,628 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:30,630 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:31,061 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:32,632 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:34,635 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:36,176 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:36,637 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:37,408 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:23:37,409 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:23:37,410 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:23:37,412 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:23:37,638 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:23:38,570 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:23:38,640 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:39,641 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:40,643 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:41,294 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:42,645 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:42,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:23:42,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:23:42,857 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:23:44,647 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:46,307 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:46,650 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:48,652 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:50,654 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:51,422 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:52,656 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:54,659 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:56,543 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:23:56,661 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:57,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:23:57,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:23:57,857 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:23:58,014 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:23:58,038 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:23:58,038 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:23:58,040 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:23:58,664 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:23:58,664 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:23:59,666 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:00,667 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:01,659 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:02,669 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:04,671 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:06,674 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:06,676 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:08,572 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:24:08,677 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:10,680 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:11,788 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:12,683 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:12,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:24:12,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:24:12,857 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:24:14,685 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:16,687 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:16,921 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:18,553 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:24:18,555 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:24:18,556 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:24:18,557 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:24:18,690 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:18,690 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:24:19,691 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:20,693 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:22,006 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:22,696 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:24,698 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:26,701 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:27,089 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:27,856 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:24:27,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:24:27,858 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:24:28,703 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:30,705 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:32,784 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:34,709 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:36,712 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:37,826 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:38,574 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:24:38,713 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:40,716 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:42,718 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:42,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:24:42,858 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:24:42,858 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:24:43,015 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:43,573 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:24:43,575 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:24:43,575 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:24:43,577 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:24:43,719 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:24:44,721 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:45,722 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:46,724 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:48,088 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:48,726 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:50,728 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:52,731 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:53,184 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:54,733 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:56,735 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:24:57,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:24:57,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:24:57,858 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:24:58,324 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:24:58,737 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:00,740 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:02,742 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:03,461 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:04,293 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:25:04,294 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:25:04,295 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:25:04,297 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:25:04,745 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:04,745 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:25:05,746 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:06,747 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:08,577 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:25:08,578 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:08,750 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:10,753 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:12,756 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:12,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:25:12,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:25:12,858 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:25:13,675 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:14,758 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:16,760 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:18,762 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:18,820 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:20,765 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:22,768 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:23,960 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:24,769 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:24,992 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:25:24,994 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:25:24,994 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:25:24,996 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:25:25,770 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:25:26,772 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:27,773 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:27,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:25:27,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:25:27,858 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:25:28,774 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:29,103 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:30,777 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:32,779 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:34,363 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:34,781 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:36,783 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:38,580 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:25:38,785 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:39,504 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:40,788 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:42,790 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:42,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:25:42,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:25:42,858 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:25:44,646 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:44,792 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:45,678 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:25:45,680 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:25:45,681 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:25:45,683 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:25:45,793 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:25:46,795 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:47,796 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:48,797 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:49,791 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:50,800 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:52,802 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:54,804 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:54,927 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:25:56,806 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:57,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:25:57,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:25:57,859 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:25:58,809 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:25:59,997 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:00,811 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:02,813 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:04,816 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:05,141 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:06,376 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:26:06,378 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:26:06,379 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:26:06,381 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:26:06,818 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:06,818 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:26:07,819 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:08,582 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:26:08,821 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:10,285 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:10,824 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:12,826 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:12,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:26:12,858 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:26:12,859 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:26:14,829 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:15,437 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:16,831 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:18,834 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:20,511 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:20,836 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:22,839 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:24,841 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:25,638 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:26,843 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:27,077 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:26:27,079 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:26:27,079 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:26:27,081 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:26:27,844 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:26:27,857 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:26:27,858 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:26:27,858 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:26:28,846 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:29,847 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:30,772 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:30,848 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:32,850 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:34,853 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:35,916 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:36,855 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:38,585 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:26:38,857 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:40,859 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:40,993 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:42,862 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:42,865 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:26:42,866 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:26:42,866 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:26:44,864 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:46,141 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:46,867 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:47,797 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:26:47,799 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:26:47,799 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:26:47,801 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:26:47,868 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:26:48,869 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:49,871 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:50,873 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:51,300 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:52,875 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:54,878 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:56,445 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:26:56,879 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:26:57,860 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:26:57,861 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:26:57,861 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:26:58,881 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:00,884 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:01,519 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:02,886 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:04,888 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:06,669 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:06,890 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:08,533 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:27:08,535 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:27:08,535 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:27:08,537 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:27:08,588 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:27:08,892 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:08,893 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:27:09,894 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:10,896 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:11,820 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:12,861 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:27:12,861 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:27:12,862 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:27:12,898 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:14,901 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:16,903 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:16,974 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:18,905 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:20,908 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:22,054 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:22,911 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:24,913 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:26,915 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:27,205 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:27,862 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:27:27,863 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:27:27,863 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:27:28,918 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:29,271 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:27:29,272 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:27:29,273 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:27:29,275 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:27:29,918 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:27:30,920 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:31,921 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:32,359 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:32,922 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:34,924 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:36,926 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:37,517 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:38,591 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:27:38,929 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:40,931 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:42,603 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:42,861 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:27:42,862 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:27:42,862 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:27:42,933 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:44,935 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:46,937 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:47,746 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:48,939 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:50,016 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:27:50,018 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:27:50,019 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:27:50,020 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:27:50,942 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:50,942 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:27:51,943 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:52,896 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:52,944 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:54,946 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:56,948 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:27:57,863 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:27:57,863 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:27:57,864 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:27:58,048 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:27:58,951 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:00,953 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:02,955 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:03,123 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:04,958 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:06,960 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:08,275 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:08,593 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:28:08,962 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:10,750 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:28:10,753 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:28:10,753 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:28:10,754 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:28:10,965 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:10,965 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:28:11,966 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:12,861 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:28:12,862 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:28:12,863 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:28:12,967 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:13,429 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:14,970 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:16,972 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:18,577 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:18,974 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:20,976 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:22,979 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:23,659 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:24,981 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:26,984 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:27,862 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:28:27,863 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:28:27,863 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:28:28,804 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:28,986 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:30,988 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:31,484 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:28:31,485 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:28:31,486 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:28:31,488 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:28:31,989 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:28:32,990 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:33,953 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:33,991 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:34,992 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:36,994 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:38,596 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:28:38,996 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:39,104 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:40,998 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:42,862 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:28:42,863 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:28:42,863 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:28:43,000 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:44,270 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:45,003 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:47,005 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:49,008 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:49,355 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:51,010 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:52,249 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:28:52,251 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:28:52,251 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:28:52,253 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:28:53,012 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:53,013 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
+2024-05-21 18:28:54,014 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:54,519 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:28:55,015 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:57,018 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:57,863 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:28:57,864 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:28:57,864 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:28:59,020 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:28:59,676 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:29:01,023 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:29:03,025 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:29:04,831 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:29:05,027 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:29:07,030 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:29:08,600 DEBUG   SenderThread:3960636 [sender.py:send():382] send: stats
+2024-05-21 18:29:09,032 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:29:09,907 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: status_report
+2024-05-21 18:29:11,036 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:29:12,864 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: internal_messages
+2024-05-21 18:29:12,864 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: stop_status
+2024-05-21 18:29:12,865 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: stop_status
+2024-05-21 18:29:12,999 DEBUG   HandlerThread:3960636 [handler.py:handle_request():146] handle_request: partial_history
+2024-05-21 18:29:13,007 DEBUG   SenderThread:3960636 [sender.py:send():382] send: history
+2024-05-21 18:29:13,007 DEBUG   SenderThread:3960636 [sender.py:send_request():409] send_request: summary_record
+2024-05-21 18:29:13,008 INFO    SenderThread:3960636 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-05-21 18:29:13,037 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/output.log
+2024-05-21 18:29:13,038 INFO    Thread-12 :3960636 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/alham.fikri/farid/lingualchemy/wandb/run-20240521_181637-clos3kdw/files/wandb-summary.json
