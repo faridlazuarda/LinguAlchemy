@@ -25,9 +25,7 @@ os.environ['TOKENIZERS_PARALLELISM'] = 'true'
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(
-        description="Train a LoRA module per langauge for XLSum."
-    )
+    parser = argparse.ArgumentParser()
     parser.add_argument(
         "--model_name",
         type=str,
@@ -182,33 +180,29 @@ if __name__ == "__main__":
         dset_test_dict = dset_test_dict.rename_column("intent", "labels")
 
 
+    dset_dict = dset_dict.map(encode_batch, batched=True)
+    dset_test_dict = dset_test_dict.map(encode_batch, batched=True)
+
     # Initialize model
     config = AutoConfig.from_pretrained(args.model_name, num_labels=60)
     if args.model_name == "bert-base-multilingual-cased":
         print(args.model_name)
         model = FusionBertForSequenceClassification(config, uriel_vector)
-        dset_dict = dset_dict.map(encode_batch, batched=True)
+
         dset_dict.set_format(type="torch", columns=["labels", "utt", "input_ids", "token_type_ids", "attention_mask", "language_labels", "uriel_labels"])
-
-        dset_test_dict = dset_test_dict.map(encode_batch, batched=True)
         dset_test_dict.set_format(type="torch", columns=["labels", "utt", "input_ids", "token_type_ids", "attention_mask", "language_labels", "uriel_labels"])
-
 
     elif args.model_name == "xlm-roberta-base":
         print(args.model_name)
         model = FusionXLMRForSequenceClassification(config, uriel_vector)
-        dset_dict = dset_dict.map(encode_batch, batched=True)
-        dset_dict.set_format(type="torch", columns=["labels", "utt", "input_ids", "attention_mask", "language_labels", "uriel_labels"])
 
-        dset_test_dict = dset_test_dict.map(encode_batch, batched=True)
+        dset_dict.set_format(type="torch", columns=["labels", "utt", "input_ids", "attention_mask", "language_labels", "uriel_labels"])
         dset_test_dict.set_format(type="torch", columns=["labels", "utt", "input_ids", "attention_mask", "language_labels", "uriel_labels"])
         
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     model = model.to(device)
 
     optimizer = torch.optim.AdamW(model.parameters(), lr=5e-5)
-
-
     training_args = TrainingArguments(
         output_dir=args.out_path,
         save_strategy="epoch",
