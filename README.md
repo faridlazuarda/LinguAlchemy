@@ -4,7 +4,7 @@
 
 Muhammad Farid Adilazuarda, Samuel Cahyawijaya, Alham Fikri Aji, Genta Indra Winata, Ayu Purwarianti
 
-MBZUAI
+MBZUAI, HKUST, Bloomberg, Institut Teknologi Bandung
 
 🌟 <a href="https://arxiv.org/pdf/2401.06034.pdf">Paper Link</a> 
 
